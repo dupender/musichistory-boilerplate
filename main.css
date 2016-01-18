@@ -1,0 +1,58 @@
+.contentContainer{
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.redbox{
+  background-color: #FFB4B0; 
+  border: 2px solid black;
+  padding: 20px 350px 20px 20px;
+
+}
+
+.bluebox{
+  background-color: #4DD7FA; 
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 20%;
+  height: 375px;
+  margin: 15px 15px 0 0;
+  padding: 10px 10px 30px 10px;
+  float: left;
+}
+
+.bluebox #center{
+  background-color: lightgrey;
+  position: relative;
+  left: 40px;
+  border-radius: 10px;
+  width: 90px
+}
+
+.slider {
+  width: 80%;
+}
+
+.yellowbox{
+   background-color: #FEFAC0;
+   color:#785616;
+   border: 2px solid black;
+   font-family: arial;
+   
+   width: 78%;
+   height: 375px;
+   margin: 15px 0 0 0px;
+   float: left;
+
+}
+
+.yellowbox h2{
+  font-weight: normal;
+  padding-left: 25px;
+}
+
+.yellowbox p{
+  padding-left: 25px
+}
