@@ -78,11 +78,11 @@ function showSongs(songs){
   let outputString = "";
   for (var i = 0; i < songs.length; i++) {
       let currentSong = songs[i];
-      outputString += `<div class="eachSong"><h2>${currentSong.name}</h2>`
-      outputString += `<p>${currentSong.artist} | ${currentSong.album} </p><button>Delete</button></div>`
-      songDOM.innerHTML = outputString + `</p><button id='more'>More ></button>`;
+      outputString += `<div class='eachSong'><h2>${currentSong.name}</h2>`
+      outputString += `<p>${currentSong.artist} | ${currentSong.album} </p><button class='eachDel'>Delete</button></div>`
       };
-  addEvents();    
+      songDOM.innerHTML = outputString + `</p><button id='more'>More ></button>`;
+      addEvents();    
 }
 
 function showSongs2(songs2){
@@ -98,13 +98,10 @@ function showSongs2(songs2){
   for (var i = 0; i < songs2.length; i++) {
     console.log("hello" );
       let currentSong = songs2[i];
-      outputString += `<div><h2>${currentSong.name}</h2>`
-      outputString += `<p>${currentSong.artist} | ${currentSong.album} </p><button>Delete</button></div>`
-       moreButton.innerHTML = outputString + `</p><button id='more'>More ></button>`;
-       // moreParent = moreButton.innerHTML;
-       // document.getElementById("moreButton").appendChild(node);
+      outputString += `<div class='eachSong'><h2>${currentSong.name}</h2>`
+      outputString += `<p>${currentSong.artist} | ${currentSong.album} </p><button class='eachDel'>Delete</button></div>`    
       };
-  addEvents();    
+      yellowbox.innerHTML += outputString + `</p><button id='more'>More ></button>`;
 }      
 
 window.addEventListener("load", function() {
@@ -115,42 +112,30 @@ function addEvents(){
   linkList.addEventListener("click", function() {
         listView.classList.remove("hidden");
         addView.classList.add("hidden");
-      });
+  });
 
   linkAdd.addEventListener("click", function(){
       addView.classList.remove("hidden");
       listView.classList.add("hidden");
   })
 
-
   addButton.addEventListener("click", function(){
     var addSong = document.getElementById("song").value;
     var addArtist = document.getElementById("artist").value;
     var addAlbum = document.getElementById("album").value;
     songDOM.innerHTML += `<h2>${addSong}</h2><p>${addArtist} | ${addAlbum}</p>`;
-        })
+  })
 
   yellowbox.addEventListener("click", function(event){
-    // console.log("e", event.target.className);
+    console.log(event.target.parentNode);
     if (event.target.className === "eachDel"){
-       console.log(event);
-       yellowbox.removeChild(event.target.parentNode.firstChild);
-       yellowbox.removeChild(event.target.previousElementSibling);
-       yellowbox.removeChild(event.toElement);
-        };
-      })
-
-  let moreButton = document.getElementById("more");
-  moreButton.addEventListener("click", function(event){
-    if (event.target.id === "more"){
-       console.log("hi");
-          songQ.loadSongs2(showSongs2);
-       // for (var i = 0; i < eachDel.length; i++) {
-       //   if (i>1){
-       //   }
-       // };
-    };
+        yellowbox.removeChild(event.target.parentNode);   
+      }   
+    if (event.target.id ==="more"){
+      songQ.loadSongs2(showSongs2);
+      }   
   })
+
 };
 songQ.loadSongs(showSongs);
 // songQ.loadSongs2(showSongs2);
