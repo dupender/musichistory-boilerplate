@@ -43,7 +43,7 @@ ul > li {
   width: 80%;
 }
 
-#yellowbox{
+.yellowbox{
    background-color: #FEFAC0;
    color:#785616;
    border: 2px solid black;
