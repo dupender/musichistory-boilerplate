@@ -1,0 +1,59 @@
+.visible {
+  display: block; }
+
+.hidden {
+  display: none; }
+
+ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+  padding: 5px; }
+
+.redbox {
+  background-color: #FFB4B0;
+  border: 2px solid black;
+  padding: 20px 250px 20px 20px;
+  list-style: none; }
+
+.bluebox {
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 20%;
+  height: 375px;
+  margin: 15px 15px 0 0;
+  padding: 10px 10px 30px 10px;
+  float: left; }
+
+.bluebox #center {
+  background-color: lightgrey;
+  position: relative;
+  left: 60px;
+  border-radius: 10px;
+  width: 90px; }
+
+.slider {
+  width: 80%; }
+
+.yellowbox {
+  background-color: #FEFAC0;
+  color: #785616;
+  border: 2px solid black;
+  font-family: arial;
+  width: 78%;
+  height: 375px;
+  margin: 15px 0 0 0;
+  padding-left: 20px 20px;
+  overflow: scroll;
+  float: left; }
+
+/******************************************/
+/*AddMusic*/
+/******************************************/
+#addButton {
+  background-color: lightgrey;
+  position: relative;
+  left: 80px;
+  border-radius: 10px;
+  width: 90px; }

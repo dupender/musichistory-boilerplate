@@ -1,6 +1,7 @@
 {
-  "songs":[
-  {"name":"Respect", "artist":"Aretha Franklin", "album":"I Never Loved A Man"},
-  {"name":"Hotel California","artist":"The Eagles","album":"Hotel California"}
-  ]
+  "songs":{
+  "song1":{"name":"Respect", "artist":"Aretha Franklin", "album":"I Never Loved A Man"},
+  "song2":{"name":"Hotel California","artist":"The Eagles","album":"Hotel California"},
+  "song3":{"name":"Ironic","artist":"Alanis Morrissette","album":"The Jagged Little Pill"},"song4": {"name":"A-Punk","artist":"Vampire Weekend","album":"Vampire Weekend"}
+  }
 }

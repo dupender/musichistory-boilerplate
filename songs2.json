@@ -1,5 +1,5 @@
 {
-  "songs":[
-  {"name":"Ironic","artist":"Alanis Morrissette","album":"The Jagged Little Pill"}, {"name":"A-Punk","artist":"Vampire Weekend","album":"Vampire Weekend"}
-  ]
+  "songs":{
+  "song3":{"name":"Ironic","artist":"Alanis Morrissette","album":"The Jagged Little Pill"},"song4": {"name":"A-Punk","artist":"Vampire Weekend","album":"Vampire Weekend"}
+  }
 }
